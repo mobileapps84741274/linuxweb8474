@@ -1,4 +1,4 @@
-wget https://raw.githubusercontent.com/mobileapps84741274/linuxweb8474/main/linux84.tar.xz
+wget -N https://raw.githubusercontent.com/mobileapps84741274/linuxweb8474/main/linux84.tar.xz
 
 tar -xvf ./linux84.tar.xz
 
